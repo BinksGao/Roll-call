@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:id="@+id/container"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    tools:context="com.example.touchimagetest.MainActivity"  
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/pgy" >  
+     <!-- 顶部  -->  
+    <RelativeLayout   
+        android:id="@+id/MyLayout_top"  
+        android:orientation="horizontal"   
+        android:layout_width="fill_parent"  
+        android:layout_height="40dp"   
+        android:layout_alignParentTop="true" >  
+        <!-- 标题 -->  
+        <LinearLayout  
+			android:orientation="horizontal"  
+		  	android:layout_width="fill_parent"  
+		  	android:layout_height="fill_parent"
+		  	android:gravity="center" >
+		  	<TextView  
+		  	    android:id="@+id/et_stu_number"
+		   		android:layout_width="wrap_content"  
+		   		android:layout_height="wrap_content"
+		   		android:layout_weight="1" 
+		   		android:gravity="center"
+		   		android:textSize="20sp" 
+		   		android:text="学号" />  
+		   	<TextView  
+		   	     android:id="@+id/et_stu_name"
+		   		android:layout_width="wrap_content"  
+		   		android:layout_height="wrap_content"
+		   		android:layout_weight="1"
+		   		android:gravity="center"
+		   		android:textSize="20sp"
+		   		android:text="姓名" />
+		  	<TextView  
+		  	     android:id="@+id/et_classname"
+		   		android:layout_width="wrap_content"  
+		   		android:layout_height="wrap_content"
+		   		android:layout_weight="1"  
+		   		android:gravity="center"
+		   		android:textSize="20sp"
+		   		android:text="课程" />
+		  	<TextView  
+		  	     android:id="@+id/et_grade"
+		   		android:layout_width="wrap_content"  
+		   		android:layout_height="wrap_content"
+		   		android:layout_weight="1"
+		   		android:gravity="center" 
+		   		android:textSize="20sp" 
+		   		android:text="成绩" />
+		</LinearLayout>  
+    </RelativeLayout>  
+    <!-- 底部按钮 -->  
+    <RelativeLayout  
+        android:id="@+id/MyLayout_bottom"  
+        android:orientation="horizontal"   
+        android:layout_width="fill_parent"  
+        android:layout_height="90dp"  
+        android:layout_alignParentBottom="true"  
+        android:gravity="center"> 
+        <LinearLayout  
+			android:orientation="vertical"  
+		  	android:layout_width="fill_parent"  
+		  	android:layout_height="fill_parent"
+		  	android:layout_alignParentBottom="true" >
+	        <LinearLayout  
+				android:orientation="horizontal"  
+			  	android:layout_width="fill_parent"  
+			  	android:layout_height="40dp"
+			  	android:gravity="center" >
+			  	<EditText  
+			  	    android:id="@+id/ed_stu_number"
+			   		android:layout_width="wrap_content"  
+			   		android:layout_height="wrap_content"
+			   		android:layout_weight="1" 
+			   		android:gravity="center"
+			   		android:textSize="20sp" 
+			   		android:hint="学号" />  
+			   	<EditText  
+			  	    android:id="@+id/ed_stu_name"
+			   		android:layout_width="wrap_content"  
+			   		android:layout_height="wrap_content"
+			   		android:layout_weight="1" 
+			   		android:gravity="center"
+			   		android:textSize="20sp" 
+			   		android:hint="姓名" />  
+			  	<EditText  
+			  	    android:id="@+id/ed_classname"
+			   		android:layout_width="wrap_content"  
+			   		android:layout_height="wrap_content"
+			   		android:layout_weight="1" 
+			   		android:gravity="center"
+			   		android:textSize="20sp" 
+			   		android:hint="课程" />  
+			  	<EditText  
+			  	    android:id="@+id/ed_grade"
+			   		android:layout_width="wrap_content"  
+			   		android:layout_height="wrap_content"
+			   		android:layout_weight="1" 
+			   		android:gravity="center"
+			   		android:textSize="20sp" 
+			   		android:hint="成绩" />  
+			</LinearLayout>   
+	        <LinearLayout   
+	            android:layout_width="match_parent"  
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >  
+	           	<Button  
+	                android:id="@+id/CreatDB"  
+	                android:layout_width="wrap_content"  
+	                android:layout_height="match_parent"  
+	                android:layout_weight="1" 
+	                android:onClick="CreatDB" 
+	                android:text="创表" />
+	           <Button  
+	                android:id="@+id/insertDB"  
+	                android:layout_width="wrap_content"  
+	                android:layout_height="match_parent"  
+	                android:layout_weight="1"  
+	                android:onClick="insertDB"
+	                android:text="插入" />
+	         	<Button  
+	                android:id="@+id/deleteDB"  
+	                android:layout_width="wrap_content"  
+	                android:layout_height="match_parent"  
+	                android:layout_weight="1"  
+	                android:onClick="deleteDB"
+	                android:text="删除" />
+	           	<Button  
+	                android:id="@+id/updateDB"  
+	                android:layout_width="wrap_content"  
+	                android:layout_height="match_parent"  
+	                android:layout_weight="1"  
+	                android:onClick="updateDB"
+	                android:text="更新" />
+	             <Button  
+	                android:id="@+id/queryDB"  
+	                android:layout_width="wrap_content"  
+	                android:layout_height="match_parent"  
+	                android:layout_weight="1"
+	                android:onClick="queryDB"  
+	                android:text="查询" />
+	          </LinearLayout>    
+	      </LinearLayout>    
+    </RelativeLayout>  
+    <!-- 显示列表 -->  
+    <RelativeLayout  
+        android:id="@+id/Content_Layout"   
+        android:orientation="horizontal"  
+        android:layout_width="fill_parent"   
+        android:layout_height="fill_parent"  
+        android:layout_above="@id/MyLayout_bottom"   
+        android:layout_below="@id/MyLayout_top"  
+        android:background="#EFDFDF" >  
+		<!-- 显示表内容 -->
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        </ListView>
+    </RelativeLayout>  
+</RelativeLayout>  

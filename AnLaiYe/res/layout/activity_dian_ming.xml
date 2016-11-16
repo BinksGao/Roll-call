@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="@drawable/pgy" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="学生信息"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="318dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textSize="30sp" />
+
+         <RadioGroup 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/type_rgp"
+                    >
+                    <RadioButton
+                        android:id="@+id/RB1"
+                        android:text="出勤"
+                    />
+                    <RadioButton
+                        android:id="@+id/RB2"
+                        android:text="缺勤"
+                    />
+                    
+                        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="SaveDB"
+            android:gravity="center"
+            android:text="保存信息" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="QueryDB"
+             android:gravity="center"
+            android:text="查询信息" />
+    </LinearLayout>
+
+</LinearLayout>

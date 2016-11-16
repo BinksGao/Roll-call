@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anlaiye"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.anlaiye.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.anlaiye.BackPWDActivity"
+            android:label="@string/title_activity_back_pwd" >
+        </activity>
+        <activity
+            android:name="com.example.anlaiye.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.anlaiye.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.anlaiye.HelloActivity"
+            android:label="@string/title_activity_hello" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.anlaiye.TeacherActivity"
+            android:label="@string/title_activity_teacher" >
+        </activity>
+        <activity
+            android:name="com.example.anlaiye.StudentActivity"
+            android:label="@string/title_activity_student" >
+        </activity>
+        <activity
+            android:name="com.student_info.anlaiye.StudengtInfoActivity"
+            android:label="@string/title_activity_studengt_info" >
+        </activity>
+        <activity
+            android:name="com.courseinfo.anlaiye.CourseInfoActivity"
+            android:label="@string/title_activity_course_info" >
+        </activity>
+        <activity
+            android:name="com.scoreinfo.anlaiye.ScoreInfoActivity"
+            android:label="@string/title_activity_score_info" >
+        </activity>
+        <activity
+            android:name="com.info_query.anlaiye.InfoQueryActivity"
+            android:label="@string/title_activity_info_query" >
+        </activity>
+        <activity
+            android:name="com.suiji.anlaiye.SuiJiActivity"
+            android:label="@string/title_activity_sui_ji" >
+        </activity>
+        <activity
+            android:name="com.bluetooth.anlaiye.BlueToothActivity"
+            android:label="@string/title_activity_blue_tooth" >
+        </activity>
+        <activity
+            android:name="com.info_query.anlaiye.GradeQuery"
+            android:label="@string/title_activity_grade_query" >
+        </activity>
+        <activity
+            android:name="com.info_query.anlaiye.StuInfoQuery"
+            android:label="@string/title_activity_stu_info_query" >
+        </activity>
+        <activity
+            android:name="com.info_query.anlaiye.AbsenceInfoQuery"
+            android:label="@string/title_activity_absence_info_query" >
+        </activity>
+        <activity
+            android:name="com.suiji.anlaiye.DianMingActivity"
+            android:label="@string/title_activity_dian_ming" >
+        </activity>
+        <activity
+            android:name="com.suiji.anlaiye.QueryActivity"
+            android:label="@string/title_activity_query" >
+        </activity>
+    </application>
+
+</manifest>

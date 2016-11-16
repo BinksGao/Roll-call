@@ -1,0 +1,97 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/pgy" >
+
+<!-- 第一行 -->
+<TableRow
+    android:id="@+id/tableRow1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <com.button.anlaiye.ImageTextButton
+            android:id="@+id/teac_btn1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher"
+            android:text="随机点名" 
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"/>
+
+        <com.button.anlaiye.ImageTextButton
+            android:id="@+id/teac_btn2"
+           android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher" 
+            android:layout_weight="1"
+            android:text="学生信息"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <com.button.anlaiye.ImageTextButton
+            android:id="@+id/teac_btn3"
+        android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher" 
+            android:layout_weight="1"
+            android:text="课程信息"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+        
+    </LinearLayout>
+    
+</TableRow>
+
+
+<!-- 第三行 -->
+
+<TableRow
+    android:id="@+id/tableRow3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <com.button.anlaiye.ImageTextButton
+            android:id="@+id/teac_btn4"
+           android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher" 
+            android:text="成绩管理"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"/>
+
+        <com.button.anlaiye.ImageTextButton
+            android:id="@+id/teac_btn5"
+        android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher" 
+            android:layout_weight="1"
+            android:text="蓝牙点名"
+             android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <com.button.anlaiye.ImageTextButton
+            android:id="@+id/teac_btn6"
+         android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher" 
+            android:layout_weight="1"
+            android:text="信息查询"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+        
+    </LinearLayout>
+    
+</TableRow>
+
+<!-- 第四行 -->
+</TableLayout>
